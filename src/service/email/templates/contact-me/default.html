@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template-default</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
+        @media only screen and (max-width: 600px) {
+            body {
+                table {
+                    width: 100%;
+
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body style="
+                display: flex;
+                justify-content: center;
+                margin: 0px; 
+                width: 100%;
+                padding: 0px; 
+                margin-top: 25px;
+                color: #212529;
+                font-family: Sora, sans-serif;
+                ">
+
+    <table style=" 
+                display: table; 
+                width: 600px; 
+                border-radius: 4px 4px 0px 0px;  
+                background-color: #E9ECEF;
+                ">
+        <tbody style=" 
+                display: table; 
+                padding: 25px;
+                width: 600px; 
+                border-spacing: 30px;
+                ">
+
+            <tr>
+                <td style=" display: flex; flex-direction: row; justify-content: space-between; width: 100%;
+    align-items: center;">
+                    <h1 style="font-family: Montserrat, sans-serif; font-size: 48px;">Email recebido</h1>
+                    <img src="https://portifolio-coral-five.vercel.app/src/imgs/header-img.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                display: flex; 
+                justify-content: space-between;
+                border-top: 1px solid #212529; 
+                border-bottom: 1px solid #212529;
+                width: 100%;
+                color: #495057;">
+
+                    <p>Sábado</p>
+                    <p>22/06/2024</p>
+                </td>
+            </tr>
+
+            <tr style="
+                display: table-cell; 
+                border-spacing: 0px; ">
+                <td>Olá, meu chamo {{name}}, deixei essa mensagem no seu portifólio:</td>
+                <td style="
+                display: flex;
+                flex-direction: column;
+                border: 1.4px solid #212529;
+                border-radius: 4px;
+                padding: 16px 24px 16px 24px;
+                color: #495057;
+                margin-top: 30px;
+                ">
+                    {{message}},
+                </td>
+                <td style="
+                display: table-cell; 
+                padding-top: 30px;">
+                    responda pelo meu email {{email}}.
+                    <a href="mailto:{{email}}" style="    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: fit-content;
+                padding: 20px 16px 20px 16px;
+                margin-top: 30px;
+                border-radius: 4px;
+                border: 1.4px solid #212529;
+                color: #E9ECEF;
+                background-color: #212529;
+                cursor: pointer;
+                text-decoration: none;">Responder</a>
+
+                </td>
+
+            </tr>
+          
+        </tbody>  
+        <tr style="
+        background-color: #212529; 
+        ">
+                <td style="
+                    display: flow;
+                    text-align: center;
+                    margin-top: 15px;
+                    height: 80px;
+                    ">
+                    <img style="width: 30px; height: 30px;" src="https://portifolio-coral-five.vercel.app/src/imgs/footer-img.svg" alt="footer-logo">
+                    <p style="color: #E9ECEF;">Lyan Brito</p>
+                </td>
+
+            </tr>
+    </table>
+</body>
+
+</html>
