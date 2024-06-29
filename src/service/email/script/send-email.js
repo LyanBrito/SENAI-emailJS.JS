@@ -4,10 +4,9 @@ emailjs.init({
 })
 function handleEmail() {
     let templateParams = {
-        name: "Destinatário",
+        name: "Lyan",
         user_email: "lyanbrito613@gmail.com",
-        from_name: "Suporte de Domingo",
-        message: "Conteúdo da mensagem aqui..."
+        from_name: "Next Mockup Store",
     }
 
 
