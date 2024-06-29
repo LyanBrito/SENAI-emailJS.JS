@@ -12,11 +12,11 @@ function handleEmail() {
 
 
     emailjs.send("service_n0iuc6m", "template_lrujwty", templateParams)
-        .then(function (response) {
-            console.log('sucesso', response.status, response.text)
+        .then((res) => {
+            console.log('sucesso', res.status, res.text)
             alert('sucesso')
-        }), function(error) {
-            console.error('erro ao enviar o email')
+        }), (error) => {
+            console.error('erro ao enviar o email', error)
 
         }
 }
